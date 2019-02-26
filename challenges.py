@@ -11,7 +11,7 @@ def sum_to(num):
   sum = 0
   for i in range(num + 1):
     sum += i
-  print(sum)
+  print("The sum from 1 to "+ str(num) + ": " + str(sum))
 
 sum_to(10)
 
@@ -25,7 +25,7 @@ def largest(list):
 	for i in list:
 		if(i>largest):
 			largest = i
-	print(largest)
+	print("Largest on list: " + str(largest))
 
 
 largest([1,2,34,5,6])
@@ -40,7 +40,7 @@ def occurances(one, two):
 	for i in one:
 		if(i == two):
 			occur += 1
-	print(occur)
+	print("Number of " + "'" + two + "'" + " occurances: " + str(occur))
 
 
 occurances('fleeeeep floop', 'e')
@@ -48,10 +48,17 @@ occurances('fleeeeep floop', 'e')
 
 
 
+#Function that takes an arbitrary number of parameters, multiplies them all together, and returns the product.
 
+#Only need "*", args is just a convention:
+def multi(*args):
+	product = 1
+	for i in args:
+		product *= i
+	print("The product of this numbers is: " + str(product))
+	
 
-
-
+multi(2, 2, 2, 2)
 
 
 
