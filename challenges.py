@@ -32,3 +32,27 @@ largest([1,2,34,5,6])
 
 
 
+
+#Function that counts the number of occurrances of the second string inside the first string.
+
+def occurances(one, two):
+	occur = 0
+	for i in one:
+		if(i == two):
+			occur += 1
+	print(occur)
+
+
+occurances('fleeeeep floop', 'e')
+
+
+
+
+
+
+
+
+
+
+
+
